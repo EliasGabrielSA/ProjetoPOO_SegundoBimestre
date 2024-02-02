@@ -28,6 +28,7 @@
         String titulo = request.getParameter("titulo");
         String autor = request.getParameter("autor");
         String preco = request.getParameter("preco");
+        System.out.println(titulo); 
 
         LivroSrv srv = new LivroSrv();
         String list = srv.listagem();
@@ -87,14 +88,17 @@
                                     <input type="hidden" name="id" value=<%=id%>>
 
                                     <label for="inpTitulo">Título</label>
-                                    <input type="text" oninput="verificaCampos(titulo.value,autor.value,preco.value)"  name="titulo" id="titulo" value=<%=titulo%> >
+                                    <input type="text" oninput="verificaCampos(titulo.value,autor.value,preco.value)"
+                                           name="titulo" id="titulo" value="<%=titulo%>" >
 
                                     <label for="inpAutor">Autor</label>
-                                    <input type="text" oninput="verificaCampos(titulo.value,autor.value,preco.value)"   name="autor" id="autor" value=<%=autor%> >
+                                    <input type="text" oninput="verificaCampos(titulo.value,autor.value,preco.value)"
+                                           name="autor" id="autor" value="<%=autor%> ">
 
 
                                     <label for="inpValor">Preco</label>
-                                    <input type="number" oninput="verificaCampos(titulo.value,autor.value,preco.value)"   name="preco" id="preco" value=<%=preco%> >
+                                    <input type="number" oninput="verificaCampos(titulo.value,autor.value,preco.value)"
+                                           name="preco" id="preco" value=<%=preco%> >
 
                                     <input type="submit" value="Salvar" id="btnSalvar">
                                 </div>

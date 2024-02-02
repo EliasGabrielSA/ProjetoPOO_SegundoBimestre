@@ -77,9 +77,10 @@ public class LivroSrv extends HttpServlet {
 
                 case "pre-edicao":
                     l = (Livro) dao.pesquisarPorId(Integer.parseInt(id));
+                   
                     rd = request.getRequestDispatcher("CadastroLivros.jsp?acao=edicao"
                             + "&id=" + l.getId()
-                            + "&titulo=" + l.getTitulo()
+                            + "&titulo=" +l.getTitulo()
                             + "&autor=" + l.getAutor()
                             + "&preco=" + l.getPreco());
                     rd.forward(request, response);

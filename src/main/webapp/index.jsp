@@ -117,7 +117,8 @@
 
                                     <label for="inpAutor">Titulo do Livro</label>   
 
-                                    <input type="text" oninput="filtraElem(livro.value, '#tbodyModalLivro tr')"  name="livro" id="livro" value=<%=livro%> >
+                                    <input type="text" oninput="filtraElem(livro.value, '#tbodyModalLivro tr')"
+                                           name="livro" id="livro" value="<%=livro%>" >
                                     <div class="table-content">
                                         <table>
                                             <thead>
@@ -135,7 +136,8 @@
 
 
                                     <label for="inpValor">data Devolução</label>
-                                    <input type="date" onchange="verificaCampos(clienteId.value, livroId.value, data.value)"  name="data" id="data" value=<%=dataDev%> >
+                                    <input type="date" onchange="verificaCampos(clienteId.value, livroId.value, data.value)"
+                                           name="data" id="data" value=<%=dataDev%> >
 
                                     <input type="submit" value="Salvar" id="btnSalvar">
                                 </div>

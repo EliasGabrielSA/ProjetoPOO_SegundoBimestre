@@ -58,18 +58,18 @@ public class LivroDaoJpa implements InterfaceDao<Livro> {
 
     @Override
     public Livro pesquisarPorId(int id) throws Exception {
-        Livro c = null;
+        Livro l = null;
         EntityManager em = ConnFactory.getEntityManager();
         try {
             em.getTransaction().begin();
 
-            c = em.find(Livro.class, id);
+            l = em.find(Livro.class, id);
 
             em.getTransaction().commit();
         } finally {
             em.close();
         }
-        return c;
+        return l;
     }
 
     @Override

@@ -89,13 +89,17 @@
                                     <input type="hidden" name="id" value=<%=id%>>
                                     
                                     <label for="inpTitulo">Nome</label>
-                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)"  id="nome" name="nome" value="<%=nome%>"/>
+                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)"
+                                           id="nome" name="nome" value="<%=nome%>"/>
                                     
                                     <label for="inpAutor">Email</label>
-                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)" id="email" name="email" value="<%=email%>" />
+                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)"
+                                           id="email" name="email" value="<%=email%>" />
                                     
                                     <label for="inpGenero">Telefone</label>
-                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)" id="telefone" name="telefone" value="<%=telefone%>" />
+                                    <input type="text" oninput="verificaCampos(nome.value,email.value,telefone.value)"
+                                           id="telefone" name="telefone" value="<%=telefone%>" />
+                                    
                                     <input id="btnSalvar" type="submit" value="salvar"/>
                                 </div>
                             </form>

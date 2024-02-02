@@ -73,8 +73,7 @@ public class ClienteSrv extends HttpServlet {
                     rd.forward(request, response);
                     break;
                     
-                
-
+               
                 case "pre-edicao":
                     c = (Cliente) dao.pesquisarPorId(Integer.parseInt(id));
                     rd = request.getRequestDispatcher("CadastroClientes.jsp?acao=edicao"
@@ -86,7 +85,7 @@ public class ClienteSrv extends HttpServlet {
                     break;
 
                 case "edicao":
-                    System.out.println(nome+email+telefone+id);
+                   
                     c = new Cliente(nome, email, telefone);
                     c.setId(Integer.parseInt(id));
                     try {
